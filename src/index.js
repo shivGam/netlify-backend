@@ -1,6 +1,8 @@
 const express = require("express");
 app = express();
-const quotes = require("./quotes.json")
+const quotes = require("./quotes.json");
+const routes = require("./routes/userRoute");
+
 
 app.get("/randquo",(req,res)=>{
     let index = Math.floor(Math.random()*quotes.length);
